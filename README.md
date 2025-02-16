@@ -11,12 +11,17 @@ This repository documents my journey through the #100DaysOfCode challenge, where
 - Various other languages and technologies as exploration opportunities
 
 ## 💡 Project Structure
-Each day's work is organized in its own directory:
+
 ```
-/day_001
-/day_002
+.
+├── README.md
+├── day-1/
+│   ├── project_files
+│   └── README.md
+├── day-2/
+│   ├── project_files
+│   └── README.md
 ...
-/day_100
 ```
 
 Each directory contains:
