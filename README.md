@@ -10,7 +10,7 @@ This repository documents my journey through the #100DaysOfCode challenge, where
 - Cross-platform Mobile Development (Flutter/Dart)
 - Various other languages and technologies as exploration opportunities
 
-## 💡 Project Structure
+## 💡 Project and Directory Structure
 
 ```
 .
@@ -65,17 +65,6 @@ Progress is tracked through:
 - Learning outcomes
 - Technical skill development
 
-## 🔄 Repository Structure
-```
-.
-├── README.md
-├── day_001/
-│   ├── project_files
-│   └── README.md
-├── day_002/
-│   ├── project_files
-│   └── README.md
-...
 ```
 
 ## 🤝 Connect
