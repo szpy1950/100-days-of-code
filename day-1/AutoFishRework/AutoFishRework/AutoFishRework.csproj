@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>9.0</LangVersion>
+        <Nullable>enable</Nullable>
+        <EnableHarmony>true</EnableHarmony>
+        <GamePath>/home/teclis/.wine/drive_c/GOG Games/Stardew Valley</GamePath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.1.1" />
+        <Reference Include="StardewValley">
+            <HintPath>$(GamePath)/Stardew Valley.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="StardewModdingAPI">
+            <HintPath>$(GamePath)/StardewModdingAPI.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="Microsoft.Xna.Framework">
+            <HintPath>$(GamePath)/MonoGame.Framework.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="manifest.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+</Project>

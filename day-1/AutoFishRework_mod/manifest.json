@@ -1,0 +1,10 @@
+{
+  "Name": "AutoFishRework",
+  "Author": "YourName",
+  "Version": "1.0.0",
+  "Description": "Modified version of AutoFish",
+  "UniqueID": "YourName.AutoFish",
+  "EntryDll": "AutoFishRework.dll",
+  "MinimumApiVersion": "3.18.1",
+  "UpdateKeys": []
+}

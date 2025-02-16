@@ -1,0 +1,27 @@
+# Build directories
+**/bin/
+**/obj/
+
+# Backup files
+*.bak
+
+# User-specific files
+*.user
+*.DotSettings.user
+.idea/
+.vs/
+
+# NuGet
+*.nuget.cache
+*.nuget.dgspec.json
+*.nuget.g.props
+*.nuget.g.targets
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# zip files
+*.zip
