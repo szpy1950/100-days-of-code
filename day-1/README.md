@@ -46,7 +46,7 @@ The mod consists of three main files:
 ## In-Game Usage
 
 1. Equip your fishing rod
-2. Place food in the configured inventory slot (default: slot 1)
+2. Place food in the configured inventory slot (default: slot 12)
 3. Start fishing normally
 4. The mod will automatically:
    - Cast the line
