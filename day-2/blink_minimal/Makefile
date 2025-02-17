@@ -1,5 +1,3 @@
-# Copyright (c) 2024 CarlosFTM
-# This code is licensed under MIT license (see LICENSE.txt for details)
 NAME    = blink
 CPU     = cortex-m0plus
 ARMGNU  = arm-none-eabi

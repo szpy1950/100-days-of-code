@@ -34,7 +34,7 @@ _blink:
 	lsl  r2, r2, #18
 	str  r2, [r3, #0]
 
-	ldr r0, = 500000
+	ldr r0, = 100000
 	bl  _delay
 
 	b   _blink
