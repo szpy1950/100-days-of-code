@@ -47,7 +47,7 @@ Disassembly of section .text:
 20040048:	400140cc 	andmi	r4, r1, ip, asr #1
 2004004c:	d0000020 	andle	r0, r0, r0, lsr #32
 20040050:	d000001c 	andle	r0, r0, ip, lsl r0
-20040054:	0007a120 	andeq	sl, r7, r0, lsr #2
+20040054:	000186a0 	andeq	r8, r1, r0, lsr #13
 
 Disassembly of section .ARM.attributes:
 

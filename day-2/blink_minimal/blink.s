@@ -1,4 +1,3 @@
-
 	.cpu cortex-m0plus
 	.thumb
 
@@ -36,9 +35,7 @@ _blink:
 
 	ldr r0, = 100000
 	bl  _delay
-
 	b   _blink
-
 
 .thumb_func
 _delay:
