@@ -1,5 +1,3 @@
-;@ Copyright (c) 2023 CarlosFTM
-;@ This code is licensed under MIT license (see LICENSE.txt for details)
 
 	.cpu cortex-m0plus
 	.thumb
@@ -31,53 +29,16 @@ _reset:
 	str  r2, [r3, #0]
 
 _blink:
-    ldr  r3, =0xd000001c
-    movs r2, #128
-    lsl  r2, r2, #18
-    str  r2, [r3, #0]
+	ldr  r3, =0xd000001c
+	movs r2, #128
+	lsl  r2, r2, #18
+	str  r2, [r3, #0]
 
-    ldr r1, = up
-    ldr r5, [r1]
+	ldr r0, = 500000
+	bl  _delay
 
-    ldr r1, =counter
-    ldr r2, [r1]
-    add r2, #1
-    cmp r2, #20
+	b   _blink
 
-    be invert_up
-
-invert_up:
-    eor r5, #1
-    str r5, [r1]
-
-
-    bls counter_ok
-    movs r2, #0
-counter_ok:
-    str r2, [r1]
-
-    movs r3, #100
-    lsl r3, #10
-    mul r3, r2
-    ldr r1, =delay_value
-    ldr r0, [r1]
-
-    ldr r1, = up
-    ldr r5, [r1]
-    cmp r5, #1
-
-    beq is_up
-
-is_up:
-    add r0, r3
-    bls add_ok
-is_down:
-    sub r0, r3
-
-add_ok:
-    bl  _delay
-
-    b   _blink
 
 .thumb_func
 _delay:
@@ -87,15 +48,5 @@ _loop:
 	cmp r4, #0
 	bne _loop
 	bx  lr
-
-    .section .data
-    .align 4
-
-delay_value:
-    .word 100000
-counter:
-    .word 0
-up:
-    .word 1
 
 .align 4
