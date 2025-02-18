@@ -65,8 +65,6 @@ Progress is tracked through:
 - Learning outcomes
 - Technical skill development
 
-```
-
 ## 🤝 Connect
 Feel free to:
 - Explore the projects
@@ -76,7 +74,5 @@ Feel free to:
 
 ## 📝 Note
 While some days may feature shorter scripts or smaller projects, the focus remains on consistent practice and learning. The goal is to maintain a steady progression in programming skills while managing time effectively.
-
----
 
 *This repository is actively maintained and updated daily as part of the #100DaysOfCode challenge.*
